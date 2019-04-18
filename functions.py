@@ -15,6 +15,9 @@ def getStockDataVec(key):
 
 	return vec
 
+def formatPrices(n):
+	return ("₹" if n < 0 else "₹") + "{0:.2f}".format(abs(n))
+
 # returns the sigmoid
 def sigmoid(x):
 	return 1 / (1 + math.exp(-x))

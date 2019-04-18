@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Profitable Stock Trading</title>
+
+    <style type="text/css">
+        .header{
+            height: 70px;
+            text-align: center;
+            background: #33bbff;
+            margin-bottom: 20px;
+        }
+
+        .bod{
+            
+        }
+
+
+        .footer {
+              position: fixed;
+              left: 0;
+              bottom: 0;
+              width: 100%;
+              text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="header bg-primary text-white">
+        <h2 class="h1" style="padding-top: 8px">Machine Intelligence and Advanced Analytics for Profitable Trading</h2>
+</div>
+
+<div class="bod text-secondary">
+<div class="container">
+    <p class="lead text-justify">One of the most important problems in modern finance is to automate the trading of stocks using artificial intelligence, and finding efficient ways to summarize and visualize the stock market data to give investors useful information about the market sentiments for their investment decisions. This project focuses on analyzing stock market data to understand the stock movements and use this information for profitable stock trading. In addition, we analyze the market sentiments about stocks and provide investment recommendations based on the analysis results.
+    </p>
+</div>
+
+<div class="container text-center">
+
+    <div class="dropdown">
+        <label class="h5 align-text-top" style="margin-right: 20px;">STEP 1: Select a stock symbol  </label>
+        <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Select Stock Symbol
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <button class="dropdown-item" type="button" data-toggle="collapse" data-target="#collapseNifty" aria-expanded="false" aria-controls="collapseExample onclick="">NIFTY 50</button>
+            <button class="dropdown-item" type="button" data-toggle="collapse" data-target="#collapseSensex" aria-expanded="false" aria-controls="collapseExample onclick="">SENSEX</button>
+            <button class="dropdown-item" type="button" data-toggle="collapse" data-target="#collapseTatasteel" aria-expanded="false" aria-controls="collapseExample onclick="">TATASTEEL</button>
+            <button class="dropdown-item" type="button" data-toggle="collapse" data-target="#collapseReliance" aria-expanded="false" aria-controls="collapseExample onclick="">RELIANCE</button>
+            <button class="dropdown-item" type="button" data-toggle="collapse" data-target="#collapseSbin" aria-expanded="false" aria-controls="collapseExample onclick="">SBIN</button>
+            <button class="dropdown-item" type="button" data-toggle="collapse" data-target="#collapseBpcl" aria-expanded="false" aria-controls="collapseExample onclick="">BPCL</button>
+            <button class="dropdown-item" type="button" data-toggle="collapse" data-target="#collapseTcs" aria-expanded="false" aria-controls="collapseExample onclick="">TCS</button>
+            <button class="dropdown-item" type="button" data-toggle="collapse" data-target="#collapseItc" aria-expanded="false" aria-controls="collapseExample onclick="">ITC</button>
+        </div>
+    </div>
+</div>
+
+<div class="container collapse" id="collapseNifty">
+    <div class="card card-body">
+        <div class="row">
+            <div class="col">
+                <p>The <b class="text-primary">NIFTY 50</b> index is National Stock Exchange of India's benchmark broad based stock market index for
+                the Indian equity market. Full form of NIFTY is National Stock Exchange Fifty . It represents the
+                weighted average of 50 Indian company stocks in 12 sectors and is one of the two main stock indices used
+                    in India, the other being the BSE Sensex.</p>
+                <p>Nifty BEES (Benchmark Exchange Traded Scheme)—the first exchange traded fund (ETF) in India—seeks to
+                provide investment returns that closely correspond to the total returns of securities as represented by
+                the S&P CNX Nifty Index. Nifty BeES, a combination of a share and a mutual fund unit, trades on the
+                capital market segment of NSE (National Stock Exchange). Each Nifty BeES unit is 1/10th of the S&P CNX
+                Nifty Index value. Nifty BeES units are traded and settled in dematerialised form like any other share
+                in the rolling settlement. Thus, it allows you to trade real-time on NSE and gives you real-time
+                    indicative NAV (net asset value).</p>
+            </div>
+            <div class="col">
+
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <div class="tradingview-widget-copyright"><span class="text-primary">NIFTY 50</span></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                        {
+                            "symbol": "BSE:NIFTYBEES",
+                            "width": "100%",
+                            "height": "100%",
+                            "locale": "in",
+                            "dateRange": "12m",
+                            "colorTheme": "light",
+                            "trendLineColor": "#37a6ef",
+                            "underLineColor": "#e3f2fd",
+                            "isTransparent": false,
+                            "autosize": true,
+                            "largeChartUrl": ""
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container collapse" id="collapseSensex">
+    <div class="card card-body">
+        <div class="row">
+            <div class="col">
+                <p> The <b class="text-primary">BSE SENSEX</b> is a free-float market-weighted stock market index of 30 well-established and financially sound companies listed on Bombay Stock Exchange. The 30 component companies which are some of the largest and most actively traded stocks, are representative of various industrial sectors of the Indian economy</p>
+                <p>The index is calculated based on a free float capitalisation method, a variation of the market capitalisation method. Instead of using a company's outstanding shares it uses its float, or shares that are readily available for trading. Free Floating capital implies total capitalization less Directors shareholding. As per free float capitalisation methodology, the level of index at any point of time reflects the free float market value of 30 component stocks relative to a base period. The index has increased by over twenty five times from June 1990 to the present. Using information from April 1979 onwards, the long-run rate of return on the S&P BSE SENSEX works out to be 18.6% per annum.
+                </p>
+            </div>
+            <div class="col">
+
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <div class="tradingview-widget-copyright"><span class="text-primary">SENSEX</span></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                        {
+                            "symbol": "BSE:SENSEX",
+                            "width": "100%",
+                            "height": "100%",
+                            "locale": "in",
+                            "dateRange": "12m",
+                            "colorTheme": "light",
+                            "trendLineColor": "#37a6ef",
+                            "underLineColor": "#e3f2fd",
+                            "isTransparent": false,
+                            "autosize": true,
+                            "largeChartUrl": ""
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container collapse" id="collapseTatasteel">
+    <div class="card card-body">
+        <div class="row">
+            <div class="col">
+                <p> <b class="text-primaryt">Tata Steel Limited</b> formerly Tata Iron and Steel Company Limited (TISCO) is an Indian multinational steel-making company headquartered in Mumbai, Maharashtra, India, and a subsidiary of the Tata Group. It is one of the top steel producing companies globally with annual crude steel deliveries of 27.5 million tonnes (in FY17), and the second largest steel company in India (measured by domestic production) with an annual capacity of 13 million tonnes after SAIL.
+
+                <p>Tata Steel has manufacturing operations in 26 countries, including Australia, China, India, the Netherlands, Singapore, Thailand and the United Kingdom, and employs around 80,500 people. Its largest plant is located in Jamshedpur, Jharkhand. In 2007 Tata Steel acquired the UK-based steel maker Corus. It was ranked 486th in the 2014 Fortune Global 500 ranking of the world's biggest corporations. It was the seventh most valuable Indian brand of 2013 as per Brand Finance.</p>
+                </p>
+            </div>
+            <div class="col">
+
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <div class="tradingview-widget-copyright"><span class="text-primary">TATASTEEL</span></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                        {
+                            "symbol": "BSE:TATASTEEL",
+                            "width": "100%",
+                            "height": "100%",
+                            "locale": "in",
+                            "dateRange": "12m",
+                            "colorTheme": "light",
+                            "trendLineColor": "#37a6ef",
+                            "underLineColor": "#e3f2fd",
+                            "isTransparent": false,
+                            "autosize": true,
+                            "largeChartUrl": ""
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container collapse" id="collapseReliance">
+    <div class="card card-body">
+        <div class="row">
+            <div class="col">
+                <p><b class="text-primary">Reliance Industries Limited (RIL)</b> is an Indian conglomerate holding company headquartered in Mumbai, Maharashtra, India. Reliance owns businesses across India engaged in energy, petrochemicals, textiles, natural resources, retail, and telecommunications. Reliance is one of the most profitable companies in India,[4] the largest publicly traded company in India by market capitalization,[5] and the second largest company in India as measured by revenue after the government-controlled Indian Oil Corporation.[6] On 18 October 2007, Reliance Industries became the first Indian company to breach $100 billion market capitalization.
+
+                <p>The company is ranked 148th on the Fortune Global 500 list of the world's biggest corporations as of 2018.[9] It is ranked 8th among the Top 250 Global Energy Companies by Platts as of 2016. Reliance continues to be India’s largest exporter, accounting for 8% of India's total merchandise exports with a value of Rs 147,755 crore and access to markets in 108 countries.[10] Reliance is responsible for almost 5% of the government of India's total revenues from customs and excise duty. It is also the highest income tax payer in the private sector in India.</p>
+                </p>
+            </div>
+            <div class="col">
+
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <div class="tradingview-widget-copyright"><span class="text-primary">RELIANCE</span></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                        {
+                            "symbol": "BSE:RELIANCE",
+                            "width": "100%",
+                            "height": "100%",
+                            "locale": "in",
+                            "dateRange": "12m",
+                            "colorTheme": "light",
+                            "trendLineColor": "#37a6ef",
+                            "underLineColor": "#e3f2fd",
+                            "isTransparent": false,
+                            "autosize": true,
+                            "largeChartUrl": ""
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container collapse" id="collapseSbin">
+    <div class="card card-body">
+        <div class="row">
+            <div class="col">
+                <p> The <b class="text-primary">State Bank of India (SBI)</b> is an Indian multinational, public Sector banking and financial services statutory body. It is a government corporation statutory body headquartered in Mumbai, Maharashtra. SBI is ranked as 216th in the Fortune Global 500 list of the world's biggest corporations of 2018. It is the largest bank in India with a 23% market share in assets, besides a share of one-fourth of the total loan and deposits market.
+
+                <p>The bank descends from the Bank of Calcutta, founded in 1806, via the Imperial Bank of India, making it the oldest commercial bank in the Indian subcontinent. The Bank of Madras merged into the other two "presidency banks" in British India, the Bank of Calcutta and the Bank of Bombay, to form the Imperial Bank of India, which in turn became the State Bank of India in 1955. The Government of India took control of the Imperial Bank of India in 1955, with Reserve Bank of India (India's central bank) taking a 60% stake, renaming it the State Bank of India. In 2008, the government took over the stake held by the Reserve Bank of India.</p>
+                </p>
+            </div>
+            <div class="col">
+
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <div class="tradingview-widget-copyright"><span class="text-primary">SBIN</span></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                        {
+                            "symbol": "BSE:SBIN",
+                            "width": "100%",
+                            "height": "100%",
+                            "locale": "in",
+                            "dateRange": "12m",
+                            "colorTheme": "light",
+                            "trendLineColor": "#37a6ef",
+                            "underLineColor": "#e3f2fd",
+                            "isTransparent": false,
+                            "autosize": true,
+                            "largeChartUrl": ""
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container collapse" id="collapseBpcl">
+    <div class="card card-body">
+        <div class="row">
+            <div class="col">
+                <p><b class="text-primary">Bharat Petroleum Corporation Limited (BPCL)</b> is a Government of India controlled Maharatna oil and gas company headquartered in Mumbai, Maharashtra.The Corporation operates two large refineries of the country located in Kochi and Mumbai. The company is India's 2nd largest downstream oil company and is ranked 342nd on the Fortune list of the world's biggest corporations as of 2016. In 2018 , BPCL ranked 672 in the Forbes 2018.
+                <p>The company today known as BPCL started off as Rangoon oil company and thereafter Burmah Oil, an oil exploration company set up to explore the new discoveries off Assam and Burma during the British colonial rule of India. In 1889 during vast industrial development, an important player in the South Asian market was the Burmah Oil Company. Though incorporated in Scotland in 1886, the company grew out of the enterprises of the Chef Rohit Oil Company, which had been formed in 1871 to refine crude oil produced from primitive hand dug wells in Upper Burma.</p>
+                </p>
+            </div>
+            <div class="col">
+
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <div class="tradingview-widget-copyright"><span class="text-primary">BPCL</span></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                        {
+                            "symbol": "BSE:BPCL",
+                            "width": "100%",
+                            "height": "100%",
+                            "locale": "in",
+                            "dateRange": "12m",
+                            "colorTheme": "light",
+                            "trendLineColor": "#37a6ef",
+                            "underLineColor": "#e3f2fd",
+                            "isTransparent": false,
+                            "autosize": true,
+                            "largeChartUrl": ""
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container collapse" id="collapseTcs">
+    <div class="card card-body">
+        <div class="row">
+            <div class="col">
+                <p><b class="text-primary">Tata Consultancy Services Limited (TCS)</b> is an Indian multinational information technology (IT) service and consulting company headquartered in Mumbai, Maharashtra, India. It is a subsidiary of Tata Group and operates in 46 countries. In 2016-2017, Parent company Tata Sons owned 70% of TCS; and more than 70% of Tata Sons' dividends were generated by TCS. In March 2018, Tata Sons decided to sell stocks of TCS worth $1.25 billion in a bulk deal.</p>
+                <p>TCS is the second largest Indian company by market capitalization. It is just behind Reliance Industries in term of market value. TCS is now placed among the most valuable IT services brands worldwide. In 2015, TCS is ranked 64th overall in the Forbes World's Most Innovative Companies ranking, making it both the highest-ranked IT services company and the top Indian company. It is the world's 2nd largest IT services provider. As of 2017, it is ranked 10th on the Fortune India 500 list. In April 2018, TCS became the first Indian IT company to breach $100 billion market capitalization, and second Indian company ever (after Reliance Industries achieved it in 2007) after its m-cap stood at Rs 6,79,332.81 crore ($102.6 billion) in Bombay Stock Exchange.
+                </p>
+            </div>
+            <div class="col">
+
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <div class="tradingview-widget-copyright"><span class="text-primary">TCS</span></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                        {
+                            "symbol": "BSE:TCS",
+                            "width": "100%",
+                            "height": "100%",
+                            "locale": "in",
+                            "dateRange": "12m",
+                            "colorTheme": "light",
+                            "trendLineColor": "#37a6ef",
+                            "underLineColor": "#e3f2fd",
+                            "isTransparent": false,
+                            "autosize": true,
+                            "largeChartUrl": ""
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container collapse" id="collapseItc">
+    <div class="card card-body">
+        <div class="row">
+            <div class="col">
+                <p> The <b class="text-primary">ITC</b> is an Indian cigarette company which is headquartered in Kolkata. Its five diversified businesses are Fast-Moving Consumer Goods (comprising Foods, Personal Care, Cigarettes choo and Cigars, Apparel, Education and Stationery Products, Incense Sticks and Safety Matches), Hotels, Paperboards & Specialty Papers, Packaging, Agri-Business and Information Technology. Although the cigarette business contributes more than 80% of the profits of the company, 80% of the capital is invested in the non-tobacco businesses.</p>
+                <p>Established in 1910 as the 'Imperial Tobacco Company of India Limited', the company was renamed as the 'India Tobacco Company Limited' in 1970 and later to 'I.T.C. Limited' in 1974. The dots in the name were removed in September 2001 for the company to be renamed as 'ITC Limited' where 'ITC' would no longer be an acronym. The company completed 100 years in 2010 and as of 2012-13, had an annual turnover of US$8.31 billion and a market capitalization of US$50 billion. It employs over 30,000 people at more than 60 locations across India and is part of Forbes 2000 list.
+                </p>
+            </div>
+            <div class="col">
+
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <div class="tradingview-widget-copyright"><span class="text-primary">ITC</span></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                        {
+                            "symbol": "BSE:ITC",
+                            "width": "100%",
+                            "height": "100%",
+                            "locale": "in",
+                            "dateRange": "12m",
+                            "colorTheme": "light",
+                            "trendLineColor": "#37a6ef",
+                            "underLineColor": "#e3f2fd",
+                            "isTransparent": false,
+                            "autosize": true,
+                            "largeChartUrl": ""
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container text-center">
+    <p id="s1" class="h3 text-primary">Getting Tweets</p>
+    <!-- <p id="s2" class="h3 text-primary">Analyzing Sentiments</p>
+    <p id="s3" class="h3 text-primary">Done.</p> -->
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+    </div>
+</div>
+
+
+
+</div> <!-- End bod -->
+
+
+<div class="footer">
+    <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+  {
+  "symbols": [
+    {
+      "description": "NIFTY 50",
+      "proName": "BSE:NIFTYBEES"
+    },
+    {
+      "description": "SENSEX",
+      "proName": "BSE:SENSEX"
+    },
+    {
+      "description": "TATASTEEL",
+      "proName": "BSE:TATASTEEL"
+    },
+    {
+      "description": "RELIANCE",
+      "proName": "BSE:RELIANCE"
+    },
+    {
+      "description": "SBI",
+      "proName": "BSE:SBIN"
+    },
+    {
+      "description": "BHARAT PETROLEUM",
+      "proName": "BSE:BPCL"
+    },
+    {
+      "description": "ITC",
+      "proName": "BSE:ITC"
+    },
+    {
+      "description": "TCS",
+      "proName": "BSE:TCS"
+    }
+  ],
+  "colorTheme": "light",
+  "isTransparent": false,
+  "displayMode": "adaptive",
+  "locale": "in"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+</div>
+
+<script type="text/javascript">
+
+
+    function autorun()
+    {
+
+    }
+    if (window.addEventListener) window.addEventListener("load", autorun, false);
+    else if (window.attachEvent) window.attachEvent("onload", autorun);
+    else window.onload = autorun;
+</script>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
