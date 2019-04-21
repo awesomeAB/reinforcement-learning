@@ -1,18 +1,27 @@
-# import evaluate as model
+import evaluate as model
 import tweets as tweets
-# model.trade('^GSPC_2011')
-from flask import Flask, render_template
-app = Flask(__name__)
+from flask import Flask, render_template, jsonify
+app = Flask(__name__, static_url_path='/static')
 
-@app.route('/home')
+@app.route('/')
 def index():
    return render_template('./index.html')
 
 
-@app.route('/hello')
-def hello_world():
-   t = tweets.tweet('crypto')
-   return t[0]
+@app.route('/get/<symbol>')
+def hello_world(symbol):
+   # print(symbol)
+   # symbol='NIFTY'
+   t = tweets.tweet(symbol)
+   return jsonify(t)
+
+@app.route('/trade/<symbol>')
+def trade(symbol):
+   print('######'+symbol+'#####')
+   res = model.trade(symbol)
+   return res
+
+
 
 if __name__ == '__main__':
    app.run(debug=True)

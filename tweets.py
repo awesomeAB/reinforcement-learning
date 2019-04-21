@@ -1,4 +1,5 @@
 import tweepy as tweepy
+from credentials import consumer_key, consumer_secret, access_token, access_token_secret
 
 # consumer_key = 'EnterYourOwn'
 # consumer_secret = 'EnterYourOwn'
@@ -8,11 +9,7 @@ import tweepy as tweepy
 
 def tweet(key):
 
-    consumer_key = 'bJV8VraqBLFOyVc05wYmosIAo'
-    consumer_secret = 'E7xMIwHg59SBkCRLnTTq2PuoP4URqqwbuwCg5sp6aXKt1B7Z3o'
-
-    access_token = '380648604-vc2brHtKBn9RyrKOGsUGyl56aDHjpjTj49wsyEOl'
-    access_token_secret = 'hW4dgojzrFg2I9PCHcxzBvSfcAQCshp0aZLEQqaqpPH80'
+    
 
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_token, access_token_secret)

@@ -1,4 +1,6 @@
 import tweepy as tweepy
+from credentials import consumer_key, consumer_secret, access_token, access_token_secret
+
 
 # consumer_key = 'EnterYourOwn'
 # consumer_secret = 'EnterYourOwn'
@@ -8,12 +10,6 @@ import tweepy as tweepy
 
 def tweet(key):
 
-    consumer_key = 'bJV8VraqBLFOyVc05wYmosIAo'
-    consumer_secret = 'E7xMIwHg59SBkCRLnTTq2PuoP4URqqwbuwCg5sp6aXKt1B7Z3o'
-
-    access_token = '380648604-vc2brHtKBn9RyrKOGsUGyl56aDHjpjTj49wsyEOl'
-    access_token_secret = 'hW4dgojzrFg2I9PCHcxzBvSfcAQCshp0aZLEQqaqpPH80'
-
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_token, access_token_secret)
 
@@ -21,11 +17,11 @@ def tweet(key):
 
     # public_tweets = api.search('crypto')
     # key = input('enter key:\t')
-    public_tweets = api.search(q=key, lang='en')
+    public_tweets = api.search(q=key, lang='en', show_user=True)
     tweets = []
 
     for tweet in public_tweets:
-        print(tweet.text)
+        # print(tweet.text)
         tweets.append(tweet.text)
 
     return tweets
