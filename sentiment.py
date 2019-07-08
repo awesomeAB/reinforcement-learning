@@ -115,11 +115,11 @@ def main():
 
         if(ch=='2'):
 
-            consumer_key = 'bJV8VraqBLFOyVc05wYmosIAo'
-            consumer_secret = 'E7xMIwHg59SBkCRLnTTq2PuoP4URqqwbuwCg5sp6aXKt1B7Z3o'
+            consumer_key = 'EnterYourOwn'
+            consumer_secret = 'EnterYourOwn'
 
-            access_token = '380648604-vc2brHtKBn9RyrKOGsUGyl56aDHjpjTj49wsyEOl'
-            access_token_secret = 'hW4dgojzrFg2I9PCHcxzBvSfcAQCshp0aZLEQqaqpPH80'
+            access_token = 'EnterYourOwn'
+            access_token_secret = 'EnterYourOwn'
 
             auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
             auth.set_access_token(access_token, access_token_secret)
